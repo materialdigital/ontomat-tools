@@ -1,0 +1,23 @@
+# Stream Generation Config
+query_endpoint:
+    dev: http://localhost:7200/repositories/onto-mat
+
+kg_credentials:
+    "user": ""
+    "password": ""
+
+templates:
+    base: templates/base_template.ttl
+    mat_template: templates/mat_template_filled.ttl
+
+replace_in_URIs:
+  '.': '_'
+  ',': '_'
+  '-': '-'
+  ' ': ''
+  '/': '-'
+  "\u221a": 'sqrt'
+  "²": '2'
+  '+': '_'
+  '(': '_'
+  ')': '_'
